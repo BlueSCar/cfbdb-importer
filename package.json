@@ -1,0 +1,28 @@
+{
+  "name": "cfbdb-importer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "BlueSCar",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "cfb-data": "^2.2.1",
+    "dotenv": "^4.0.0",
+    "pg-promise": "^7.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlueSCar/cfbdb-importer.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "pre-commit": "^1.2.2"
+  }
+}
